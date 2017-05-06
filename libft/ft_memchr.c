@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 22:13:29 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/22 22:38:40 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/06 05:47:17 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = (unsigned char*)s;
-	while (*str && i < n)
+	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
 			return (&str[i]);

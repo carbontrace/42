@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/22 20:50:19 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/22 22:45:05 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/05 15:41:36 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ void	ft_putnbr(int nb)
 		ft_putchar('-');
 		nb = -nb;
 	}
-	if (nb > 10)
+	if (nb >= 10)
 	{
 		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_putnbr(nb % 10 + '0');
 	}
 	else
 		ft_putchar(nb + '0');
