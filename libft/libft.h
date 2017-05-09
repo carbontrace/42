@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/22 11:35:02 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/26 14:09:27 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/08 21:32:22 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # define TRUE 1
 # define FALSE 0
 
-# include <ft_limits.h>
+# include "ft_limits.h"
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -75,7 +75,7 @@ void				ft_striter(char *s, void (*f)(char *));
 void				ft_strniter(char *s, void (*f)(unsigned int, char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
-unsigned int		ft_strlcat(char *dest, char *src, unsigned int size);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));

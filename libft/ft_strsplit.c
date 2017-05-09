@@ -6,11 +6,11 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/21 14:15:56 by cterrill          #+#    #+#             */
-/*   Updated: 2017/05/06 07:05:38 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/08 20:17:25 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int		ft_word_countc(const char *str, char c)
 {
@@ -37,23 +37,39 @@ static int		ft_word_countc(const char *str, char c)
 	}
 	return (word_count);
 }
+/*
+static int		ft_word_sizec(const char str, char c)
+{
+	int	word_size;
+	int max_size;
+	int i;
+
+	if (!str || !c)
+		return (0);
+	i = 0;
+	word_size = 0;
+	max_size = ft_strlen(str, c);
+	while (i < max_size && str[i] != c)
+	{
+		
+*/
 
 char	**ft_strsplit(char const *s, char c)
 {
 	(void) ft_word_countc(s,c);
 	
-	char		**words;
-	char		*word;
+//	char		**words;
+//	char		*word;
 	int			word_count;
 	int			words_read;
 	int			i;
-	char *str;
+//	char *str;
 
 	i = 0;	
 	word_count = ft_word_countc(s, c);
 	words_read = 0;
-	**words = (char**)malloc(sizeof(char) * (word_count + 1));	
-	while (words_read < word_count)
+//	**words = (char)malloc(sizeof(char) * (word_count + 1));	
+/*	while (words_read < word_count)
 	{
 		word = (char*)malloc(sizeof(char) * (ft_word_sizec(str, c) + 1));
 		if (!word && !words)
@@ -66,5 +82,5 @@ char	**ft_strsplit(char const *s, char c)
 		words[word_count++] = word;
 	}
 	words[word_count] = 0;
-	return (0);
+*/	return (0);
 }

@@ -3,31 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmoiseye <mirror12k@gmail.com>             +#+  +:+       +#+        */
+/*   By: cterrill <cterrill@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/16 11:46:35 by nmoiseye          #+#    #+#             */
-/*   Updated: 2017/03/20 23:01:11 by cterrill         ###   ########.fr       */
+/*   Created: 2017/05/08 20:50:27 by cterrill          #+#    #+#             */
+/*   Updated: 2017/05/08 21:00:45 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int i;
-	unsigned int wrote;
-	unsigned int overflow;
+	int i;
+	int j;
+	int src_size;
+	int dst_size;
+	int space_left;
 
 	i = 0;
-	while (dest[i] != 0 && i < size)
+	dst_size = 0;
+	space_left = size;
+	while (src[i] != '\0')
 		i++;
-	wrote = 0;
-	if (size > 0 && dest[i] == 0)
-	{
-		while (src[wrote] != 0 && i < size - 1)
-			dest[i++] = src[wrote++];
-		dest[i] = 0;
-	}
-	overflow = 0;
-	while (src[wrote++] != 0)
-		overflow++;
-	return (i + overflow);
+	src_size = i;
+	while (dst[dst_size] != '\0' && space_left-- != 0)
+		dst_size++;
+	space_left = size - dst_size;
+	if (space_left == 0)
+		return ((size_t)(size + src_size));
+	i = 0;
+	j = dst_size;
+	while (src[i] != 0 && space_left-- > 1)
+		dst[j++] = src[i++];
+	dst[j] = '\0';
+	return ((size_t)(src_size + dst_size));
 }
