@@ -10,29 +10,19 @@
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+char	*ft_itoa(int value)
 {
-	char	*digits;
-	char	*result;
-	int		nlen;
-	int		i;
+    long        		n = value < 0 ? -(long)value : (long)value;
+    static char			buf[32] = "0";
+    int							i = 30;
+		int							base = 10;
 
-	digits = ft_strdup("0123456789");
-	nlen = ft_nlen(n);
-	if ((long)n == INT_MIN || n == 0)
-		return (n ? ft_strdup("-2147483648") : ft_strdup("0"));
-	result = n < 0 ? ft_strnew(nlen + 1) : ft_strnew(nlen);
-	if (!result)
-		return (NULL);
-	result[nlen] = n < 0 ? '-' : 0;
-	n = n < 0 ? -n : n;
-	i = result[0] == '-' ? 1 : 0;
-	while (n)
-	{
-		result[i] = digits[n % 10];
-		n /= 10;
-		i++;
-	}
-	result = ft_strrev(result);
-	return (result);
+    while (n > 0)
+    {
+        buf[i--] = "0123456789"[n % base];
+        n /= base;
+    }
+    if (value < 0 && base == 10)
+        buf[i--] = '-';
+    return (value != 0 ? buf + i + 1 : buf);
 }
