@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/22 11:08:29 by cterrill          #+#    #+#             */
-/*   Updated: 2017/05/08 21:32:04 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/22 08:38:51 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,37 @@
 
 int	ft_atoi(char *str)
 {
-	unsigned long long 	res;
-	int 				neg;
-	int 				i;
-	
-	i = 0;
-	if (str == NULL)
-		return (0);
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' ||
-			str[i] == '\f' || str[i] == ' ' || str[i] == '\r')
+	register int result = 0;
+	register unsigned int digit;
+	int sign;
+
+	/*
+	 * Skip any leading whitespaces
+	 */
+
+	while (*str == '\t' || *str == '\n' || *str == '\v' ||
+				*str == '\f' || *str == ' ' || *str == '\r')
 		str++;
-	res = 0;
-	neg = (str[i] == '-' ? -1 : 1);
-	str = (str[i] == '-' || str[i] == '+') ? str + 1 : str;
-	while (str[i] == '0')
+
+	/*
+	 * Check for a sign
+	 */
+
+	sign = (*str == '-' ? 1 : 0);
+	str = (*str == '-' || *str == '+') ? str + 1 : str;
+
+	while (*str)
+	{
+		digit = *str - '0';
+		if (digit > 9)
+		{
+			break;
+		}
+		result = (result * 10) + digit;
 		str++;
-	while (str[i] != '\0' && ft_isdigit(str[i]) != TRUE)
-		res = res * 10 + str[i++] - '0';
-	return (res * neg);
+	}
+
+	if (sign)
+		return -result;
+	return result;
 }

@@ -14,6 +14,21 @@
 
 char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
+    char *s = dest;
+    while (n > 0 && *src != '\0')
+		{
+			*s++ = *src++;
+			--n;
+    }
+    while (n > 0)
+		{
+			*s++ = '\0';
+			--n;
+    }
+    return dest;
+}
+/*
+{
 	char *ret = dest;
 	while ((*dest++ = *src++))
 	{
@@ -23,7 +38,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
   while (n--)
       *dest++ = 0;
   return ret;
-}
+}*/
 /*
 i = 0;
 	if (dest == NULL || src == NULL)
