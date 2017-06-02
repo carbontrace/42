@@ -15,20 +15,18 @@
 
 char		*ft_strndup(const char *s1, size_t n)
 {
-	char			*str;
-	size_t			size;
-	
-	size = 0;
-	while (s1[size++] != '\0' && size < n)
-		size++;
-	str = (char*)malloc(sizeof(char) * (size + 1));
-	if (!str)
+	char			*res;
+	unsigned int	i;
+
+	i = 0;
+	res = ft_memalloc(sizeof(char) * (n + 1));
+	if (res == NULL)
 		return (NULL);
-	size = 0;
-	while (s1[size] && size < n)
+	while (i < n)
 	{
-		str[size] = s1[size];
-		size++;
+		res[i] = s1[i];
+		i++;
 	}
-	return (str);
+	res[i] = '\0';
+	return (res);
 }

@@ -40,29 +40,3 @@ char	*ft_strtrim(const char *s)
 	}
 	return (new);
 }
-/*
-char 	*ft_strtrim(char const *s)
-{
-	char 	*newstr;
-	int		i;
-	int		j;
-	
-	
-	if (s == NULL)
-		return (NULL);
-	newstr = ft_strnew(ft_strlen(s));
-	if (!newstr)
-		return (NULL);
-	i = 0;
-	j = 0;
-	while (s[i] != '\0')
-	{
-		while (WHITESPACE(s[i]))
-			   i++;
-		while (!(WHITESPACE(s[i])) && ft_isalpha(s[i]))
-			newstr[j++] = s[i++];
-	}
-	newstr[j] = s[i];
-	return (newstr);
-}
-*/

@@ -6,15 +6,15 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/21 12:02:37 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/23 14:44:53 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 18:04:43 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char 	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char 	*s3;
+	char	*s3;
 	int		s1l;
 	int		s2l;
 	int		i;
@@ -26,7 +26,7 @@ char 	*ft_strjoin(char const *s1, char const *s2)
 	s2l = ft_strlen(s2);
 	s3 = ft_strnew((s1l + s2l));
 	if (!s3)
-		return(NULL);
+		return (NULL);
 	while (*s1)
 		s3[++i] = *s1++;
 	while (*s2)

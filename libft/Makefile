@@ -88,8 +88,8 @@ fclean: clean
 re: fclean all
 
 $(NAME): $(OBJECTS)
-	@$(AR) crs $@ $(OBJECTS)
 	@echo "Creating libft.a"
+	@$(AR) crs $@ $(OBJECTS)
 
 %.o: srcs/%.c
 	$(CC) $(CFLAGS) -c $< -o $@

@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 17:05:28 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/18 17:12:44 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 17:49:40 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if(!lst)
-		return;
+	if (!lst)
+		return ;
 	f(lst);
 	ft_lstiter(lst->next, f);
 }

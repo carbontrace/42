@@ -6,11 +6,11 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/19 09:13:40 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/22 22:27:32 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 18:07:39 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_lesser( int a, int b)
+int		ft_lesser(int a, int b)
 {
 	if (a < b)
 		return (a);

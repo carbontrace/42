@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/21 12:03:11 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/23 14:54:27 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 18:07:18 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!map)
 		return (NULL);
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		map[i] = f(i, s[i]);
 		i++;

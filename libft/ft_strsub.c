@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/21 12:05:33 by cterrill          #+#    #+#             */
-/*   Updated: 2017/05/14 19:47:41 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 17:52:04 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char			*new;
+	char	*new;
 	size_t	i;
 
 	if (!s)

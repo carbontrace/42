@@ -6,11 +6,13 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/19 09:12:42 by cterrill          #+#    #+#             */
-/*   Updated: 2017/04/19 09:12:47 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 17:56:29 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int 	ft_greater(int a, int b)
+#include "libft.h"
+
+int	ft_greater(int a, int b)
 {
 	if (a > b)
 		return (a);

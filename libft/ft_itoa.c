@@ -1,28 +1,53 @@
+/* ************************************************************************** */
+/*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/22 13:37:41 by cterrill          #+#    #+#             */
-/*   Updated: 2017/03/22 13:37:41 by cterrill         ###   ########.fr       */
+/*   Created: 2017/05/29 17:55:26 by cterrill          #+#    #+#             */
+/*   Updated: 2017/05/29 17:55:33 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int value)
+static size_t	intlen(int n)
 {
-    long        		n = value < 0 ? -(long)value : (long)value;
-    static char			buf[32] = "0";
-    int							i = 30;
-		int							base = 10;
+	size_t		i;
 
-    while (n > 0)
-    {
-        buf[i--] = "0123456789"[n % base];
-        n /= base;
-    }
-    if (value < 0 && base == 10)
-        buf[i--] = '-';
-    return (value != 0 ? buf + i + 1 : buf);
+	i = 1;
+	if (n < 0)
+		i++;
+	while (n /= 10)
+		i++;
+	return (i);
+}
+
+char			*ft_itoa(int n)
+{
+	char		*res;
+	size_t		len;
+	int			flag;
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	len = intlen(n);
+	if (!(res = ft_strnew(len)))
+		return (NULL);
+	if (n < 0)
+	{
+		*res = '-';
+		n *= -1;
+		flag = 1;
+	}
+	else
+		flag = 0;
+	while (len--)
+	{
+		if (n || !flag)
+			res[len] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (res);
 }

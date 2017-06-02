@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/21 14:15:56 by cterrill          #+#    #+#             */
-/*   Updated: 2017/05/08 20:17:25 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/05/29 16:45:24 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static int		ft_word_countc(const char *str, char c)
 {
-	int word_count;
-	int i;
-	int has_word;
+	int			word_count;
+	int			i;
+	int			has_word;
 
 	if (!str || !c)
 		return (0);
@@ -40,7 +40,7 @@ static int		ft_word_countc(const char *str, char c)
 
 static int		ft_word_sizec(const char *str, char c)
 {
-	int i;
+	int			i;
 
 	if (!str || !c)
 		return (0);
@@ -52,13 +52,13 @@ static int		ft_word_sizec(const char *str, char c)
 	return (i);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
-	int		word_count;
-	int		words_entered;
-	int		i;
-	char	**words;
-	char	*word;
+	int			word_count;
+	int			words_entered;
+	int			i;
+	char		**words;
+	char		*word;
 
 	i = 0;
 	words_entered = 0;
