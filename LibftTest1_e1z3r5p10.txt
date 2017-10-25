@@ -1,0 +1,100 @@
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:54 libft.a
+bash -c   4.06s user 1.83s system 42% cpu 13.784 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:54 libft.a
+bash -c   2.84s user 1.33s system 69% cpu 5.970 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:54 libft.a
+bash -c   2.83s user 1.34s system 71% cpu 5.869 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:54 libft.a
+bash -c   2.78s user 1.28s system 70% cpu 5.724 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:54 libft.a
+bash -c   2.75s user 1.27s system 71% cpu 5.655 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.75s user 1.27s system 70% cpu 5.674 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.74s user 1.25s system 71% cpu 5.611 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.76s user 1.28s system 70% cpu 5.684 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.75s user 1.28s system 71% cpu 5.669 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.78s user 1.28s system 71% cpu 5.699 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.76s user 1.27s system 70% cpu 5.695 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.71s user 1.24s system 70% cpu 5.596 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.68s user 1.23s system 72% cpu 5.383 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.75s user 1.28s system 74% cpu 5.405 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:55 libft.a
+bash -c   2.72s user 1.28s system 71% cpu 5.612 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:56 libft.a
+bash -c   2.75s user 1.30s system 70% cpu 5.733 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:56 libft.a
+bash -c   2.74s user 1.28s system 70% cpu 5.711 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:56 libft.a
+bash -c   2.76s user 1.33s system 70% cpu 5.822 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:56 libft.a
+bash -c   2.76s user 1.33s system 70% cpu 5.794 total
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+[ ✔ ] libft Created
+-rw-r--r--  1 cterrill  2017_january  64248 Oct 24 19:56 libft.a
+bash -c   2.75s user 1.29s system 70% cpu 5.744 total
